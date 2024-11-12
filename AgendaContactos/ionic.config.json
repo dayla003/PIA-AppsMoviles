@@ -1,0 +1,7 @@
+{
+  "name": "AgendaContactos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

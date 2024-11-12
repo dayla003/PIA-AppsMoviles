@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Iniciar sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content class="ion-padding">
+  <div class="login-container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Bienvenido de nuevo</ion-card-title>
+        <ion-card-subtitle>Por favor, ingresa tus datos</ion-card-subtitle>
+      </ion-card-header>
+ 
+      <ion-card-content>
+        <form (ngSubmit)="onLogin()">
+          <ion-item>
+            <ion-label position="floating">Correo electrónico</ion-label>
+            <ion-input
+              type="email"
+              [(ngModel)]="email"
+              name="email"
+              required
+              placeholder="Escribe tu correo"
+            ></ion-input>
+          </ion-item>
+ 
+          <ion-item>
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input
+              type="password"
+              [(ngModel)]="password"
+              name="password"
+              required
+              placeholder="Escribe tu contraseña"
+            ></ion-input>
+          </ion-item>
+ 
+          <ion-button expand="full" type="submit" class="ion-margin-top" [disabled]="!email || !password">
+            Iniciar sesión
+          </ion-button>
+        </form>
+ 
+        <div class="ion-text-center ion-margin-top">
+          <p>¿No tienes cuenta?</p>
+          <ion-button fill="clear" (click)="goToRegister()">Regístrate aquí</ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
