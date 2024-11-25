@@ -1,0 +1,14 @@
+<ion-fab horizontal="end" vertical="center">
+  <ion-fab-button (click)="tomarFoto()"></ion-fab-button>
+</ion-fab>
+
+<ion-grid>
+  <ion-row>
+    <ion-col size="3" >
+      <div *ngFor="let foto of fotos; index as i">
+        <img [src]="foto.webViewPath" alt="">
+      </div>
+      
+    </ion-col>
+  </ion-row>
+</ion-grid>

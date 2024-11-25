@@ -17,12 +17,11 @@ export class InicioComponent  implements OnInit {
 
   ngOnInit() {}
   
-  // Redirige a la página de inicio de sesión
-  goToLogin() {
+  irLogin() {
     this.router.navigate(['/login']);
   } 
-  // Redirige a la página de registro
-  goToRegister() {
+  
+  irRegistro() {
     this.router.navigate(['/register']);
   }
 

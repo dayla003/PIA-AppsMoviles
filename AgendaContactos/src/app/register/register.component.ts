@@ -22,15 +22,14 @@ export class RegisterPage {
   onRegister() {
     this.authService.register(this.email, this.password)
       .then(() => {
-        this.router.navigate(['/login']); // Redirigir a login después de registro exitoso
+        this.router.navigate(['/login']);
       })
       .catch((error) => {
         console.error('Error en el registro', error);
       });
   }
- 
   // Redirigir a la página de login
-  goToLogin() {
+  irLogin() {
     this.router.navigate(['/login']);
   }
 }

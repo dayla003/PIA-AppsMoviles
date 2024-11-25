@@ -21,15 +21,13 @@ export class LoginPage {
   // Método de inicio de sesión
   onLogin() {
     this.authService.login(this.email, this.password).then(() => {
-      this.router.navigate(['/tabs/tab1']); // Redirige a la página principal después del inicio de sesión exitoso
+      this.router.navigate(['/tabs/tab1']);
     }).catch(error => {
       console.log(error);
-      // Aquí puedes agregar un mensaje de error si la autenticación falla
     });
   }
- 
   // Método para redirigir a la página de registro
-  goToRegister() {
+  irRegistro() {
     this.router.navigate(['/register']);
   }
 }

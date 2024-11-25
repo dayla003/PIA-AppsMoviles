@@ -3,7 +3,7 @@ import { Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from
 import { getAuth } from 'firebase/auth';
 import { initializeApp } from 'firebase/app';
 import { environment } from 'src/environments/environment';
-
+import { signOut } from 'firebase/auth';
 
 @Injectable({
   providedIn: 'root'
@@ -27,6 +27,8 @@ export class AuthService {
   login(email: string, password: string) {
     return signInWithEmailAndPassword(this.auth, email, password);
   }
- 
-  
+
+  cerrarSesion(): Promise<void> {
+    return signOut(this.auth);  // Llama a Firebase signOut que devuelve una promesa
+  }
 }
