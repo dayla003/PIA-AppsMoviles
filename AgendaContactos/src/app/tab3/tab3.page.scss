@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400&display=swap');
+ 
+  ion-toolbar {
+    --background: #b485f0;
+    --color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+  }
+
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+  }
+
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .botonCerrar {
+    border-radius: 15px;
+    padding: 10px 20px;
+    background-color: #c71fff;
+    object-fit: cover; 
+    color:#fff;
+    width: 35%;
+    margin: 0 auto;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+    font-weight: bolder;
+  }
+
+  ion-card{
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+
+  ion-content {
+    --background: linear-gradient(to bottom,#c998f4, #ffffff);
+  }

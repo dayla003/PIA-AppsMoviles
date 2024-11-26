@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400&display=swap');
+ 
+  ion-toolbar {
+    --background: #b485f0;
+    --color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+.contacto-item {
+    margin-bottom: 10px;
+  }
+  
+  .circle {
+    display: inline-block;
+    padding: 30px;
+    background-color: #f0f0f0;
+    border-radius: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  ion-content {
+    --background: linear-gradient(to bottom,#c998f4, #ffffff);
+  }

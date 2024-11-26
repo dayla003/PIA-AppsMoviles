@@ -1,7 +1,5 @@
 <ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Bienvenido</ion-title>
-
+  <ion-toolbar>
     <ion-buttons slot="end">
       <ion-button fill="clear" (click)="irLogin()">Iniciar sesión</ion-button>
       <ion-button fill="clear" (click)="irRegistro()">Registrarse</ion-button>
@@ -10,11 +8,21 @@
 </ion-header>
  
 <ion-content class="ion-padding">
-  <div>
-    <div>
-      <h1>¡Bienvenido a nuestra aplicación!</h1>
-      <p>Comienza a gestionar tus contactos de forma fácil y rápida.</p>
+    <div class="fotoContenedor">
+      <div>
+        <img src="assets/images/cell.gif" alt="Foto de inicio" class="foto"/>
+      </div>
+      <div>
+        <img src="assets/images/personicon.gif" alt="Foto de inicio" class="fotoPersona"/>
+      </div>
+    </div>
+  
+    <div class="texto">
+      <h1>¡Bienvenido a HelloContact!</h1>
+      <p>Tu herramienta esencial para gestionar contactos de manera rápida y eficiente.</p>
+      <p>Mantén tus relaciones organizadas y nunca pierdas una conexión.</p>
     </div>  
-  </div>
 
+
+  
 </ion-content>

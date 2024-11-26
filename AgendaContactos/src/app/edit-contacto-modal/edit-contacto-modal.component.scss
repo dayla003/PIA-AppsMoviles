@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400&display=swap');
+
+ion-toolbar {
+    --background: #b485f0;
+    --color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  ion-content {
+    --background: linear-gradient(to bottom,#c998f4, #6d0d7a);
+  }
+
+  ion-item {
+    --background: #b485f0;
+  }

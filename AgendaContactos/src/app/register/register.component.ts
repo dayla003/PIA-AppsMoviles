@@ -32,4 +32,7 @@ export class RegisterPage {
   irLogin() {
     this.router.navigate(['/login']);
   }
+
+  
+  
 }

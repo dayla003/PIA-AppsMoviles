@@ -30,4 +30,8 @@ export class LoginPage {
   irRegistro() {
     this.router.navigate(['/register']);
   }
+
+  irHome(){
+    this.router.navigate(['/inicio']);
+  }
 }

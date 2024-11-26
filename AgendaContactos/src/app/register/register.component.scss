@@ -1,0 +1,71 @@
+.contenedor-inicio {
+    display: flex;/* Alinea verticalmente la imagen y el card */
+    gap: -10px; /* Espacio entre la imagen y el card */
+    flex-wrap: wrap; /* Permite que se acomode en dispositivos pequeños */
+    
+  }
+  .card {
+    margin-left: 30px;
+    margin-right: 50px;
+    --background: linear-gradient(to bottom,#d5c6e1, #ffffff);
+  }
+  
+  .inicioContenedor {
+    flex: 1; /* La imagen ocupa espacio proporcional */
+    display: flex;
+    justify-content: center; /* Centra la imagen en su columna */
+  }
+  
+  .fotoRegistro {
+    width: 600px; /* Tamaño ajustado de la imagen */
+    height: 650px;
+    margin-left: 1px;
+    margin-right: -10px;
+    border-radius: 15px; /* Hace la imagen redonda */
+    object-fit: cover;
+  }
+  
+  ion-card {
+    flex: 1; /* El ion-card ocupa más espacio proporcional */
+    margin: 20px; /* Separación del card con los bordes */
+  }
+  
+  .botonIniciar {
+    margin-top: 60px;
+  }
+  
+  .registro {
+    margin-top: 20px;
+  }
+
+    .correo{
+        padding-bottom: 10px;
+    }
+
+    .password {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .inputCorreo {
+        --color: #000; /* Color del texto */
+        --placeholder-color: #aaa; /* Color del placeholder */
+        --padding-start: 10px; /* Espaciado interno a la izquierda */
+        font-size: 16px; /* Tamaño del texto */
+        border-radius: 5px; /* Bordes redondeados */
+    }
+
+    ion-toolbar {
+      --background: #b485f0;
+      --color: white;
+      font-family: 'Open Sans', sans-serif;
+    }
+    
+    ion-content {
+      --background: linear-gradient(to bottom,#c998f4, #ffffff);
+    }
+    
+    ion-item {
+      --background: linear-gradient(to top, #d5c6e1, #ded1eb);
+    }
+    

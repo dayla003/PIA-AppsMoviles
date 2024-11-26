@@ -7,12 +7,20 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-card>
+    <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 3</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-button fill="clear" (click)="cerrarSesion()">Cerrar sesión</ion-button>
+  
+  <div class="profile-container">
+    <img src="assets/images/perfil.png" alt="Foto de perfil" class="profile-picture" />
+  </div>
+  
+  <div class="contenedor">
+    <ion-button fill="clear" (click)="cerrarSesion()" class="botonCerrar">Cerrar sesión</ion-button>
+  </div>
+  </ion-card>
 </ion-content>
-
 <app-camara></app-camara>

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonButton } from '@ionic/angular/standalone';
+import { IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonCard } from '@ionic/angular/standalone';
 import { ExploreContainerComponent } from '../explore-container/explore-container.component';
-import { AuthService } from '../services/auth.service';  // Asegúrate de que el path sea correcto
+import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
 import { CamaraComponent } from '../camara/camara.component';
 
@@ -10,20 +10,17 @@ import { CamaraComponent } from '../camara/camara.component';
   templateUrl: 'tab3.page.html',
   styleUrls: ['tab3.page.scss'],
   standalone: true,
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent, IonButton, CamaraComponent],
+  imports: [IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent, IonButton, CamaraComponent, IonCard],
 })
 export class Tab3Page {
-  // Inyectar AuthService y Router en el constructor
   constructor(
-    private authService: AuthService,  // Inyecta el servicio de autenticación
-    private router: Router             // Inyecta el servicio de Router para redirigir después de cerrar sesión
+    private authService: AuthService,
+    private router: Router
   ) {}
 
-  // Método para cerrar sesión
   cerrarSesion() {
     this.authService.cerrarSesion().then(() => {
-      // Después de cerrar sesión, redirige al login o a la pantalla inicial
-      this.router.navigate(['/login']);
+      this.router.navigate(['/inicio']);
     }).catch(error => {
       console.error('Error al cerrar sesión: ', error);
     });

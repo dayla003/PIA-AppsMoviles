@@ -1,5 +1,5 @@
 import { Injectable, inject } from '@angular/core';
-import { Firestore, collection, collectionData, doc, setDoc } from '@angular/fire/firestore';
+import { Firestore, collection, collectionData, deleteDoc, doc, setDoc } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import {v4 as uuidv4 } from 'uuid';
 uuidv4();
@@ -20,6 +20,7 @@ export class FirestoreService {
   crearDocumento(data: any, enlace: string) {
     const document = doc(this.firestore, enlace);
     return setDoc(document, data);
+  
   }
   
   crearReferenciaId(data: any, enlace: string, idDoc: string) {///contactos/7dnb0a7aiaj19zj0BXP0
@@ -30,4 +31,10 @@ export class FirestoreService {
   generarId() {
     return uuidv4()
   }
+
+  borrarDocumentoId(enlace: string, idDoc: string) {
+    const document = doc(this.firestore, `${enlace}/${idDoc}`);
+    return deleteDoc(document);
+  }
+
 }

@@ -1,21 +1,26 @@
 <ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Registro</ion-title>
+  <ion-toolbar>
   </ion-toolbar>
 </ion-header>
  
 <ion-content class="ion-padding">
-  <div>
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>Crea una cuenta nueva</ion-card-title>
-        <ion-card-subtitle>Por favor, ingresa tus datos</ion-card-subtitle>
+  <div class="contenedor-inicio">
+    <div class="inicioContenedor">
+      <img src="assets/images/registro.gif" alt="Foto de registro" class="fotoRegistro" />
+    </div>
+    <ion-card class="card">
+      <ion-card-header class="login">
+        <ion-card-title style="color: #343334; font-weight: bold;">Crea una cuenta nueva</ion-card-title>
+        <ion-card-subtitle style="color: #343334; font-weight: bold;">Por favor, ingresa tus datos</ion-card-subtitle>
       </ion-card-header>
  
-      <ion-card-content>
+      <ion-card-content class="login">
         <form (ngSubmit)="onRegister()">
           <ion-item>
-            <ion-label position="floating">Correo electrónico</ion-label>
+            <div class="correo" style="color: #343334; font-weight: bold;">
+              <ion-label position="floating">Correo electrónico</ion-label>
+            </div>
+            
             <ion-input
               type="email"
               [(ngModel)]="email"
@@ -26,24 +31,29 @@
           </ion-item>
  
           <ion-item>
-            <ion-label position="floating">Contraseña</ion-label>
-            <ion-input
+            <div class="password" style="color: #343334; font-weight: bold;">
+              <ion-label position="floating" style="color: #343334; font-weight: bold;">Contraseña</ion-label>
+            </div>
+            <div>
+              <ion-input
               type="password"
               [(ngModel)]="password"
               name="password"
               required
               placeholder="Escribe tu contraseña"
             ></ion-input>
+          </div>
+            
           </ion-item>
  
-          <ion-button expand="full" type="submit" class="ion-margin-top" [disabled]="!email || !password">
+          <ion-button expand="full" type="submit" class="ion-margin-top" class="botonIniciar" [disabled]="!email || !password">
             Registrarse
           </ion-button>
         </form>
  
         <div class="ion-text-center ion-margin-top">
-          <p>¿Ya tienes cuenta?</p>
-          <ion-button fill="clear" (click)="irLogin()">Inicia sesión aquí</ion-button>
+          <p style="color: #343334; font-weight: bold;">¿Ya tienes cuenta?</p>
+          <ion-button fill="clear" (click)="irLogin()" style="color: #343334; font-weight: bold;">Inicia sesión aquí</ion-button>
         </div>
       </ion-card-content>
     </ion-card>
