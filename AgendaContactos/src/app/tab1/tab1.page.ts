@@ -55,15 +55,13 @@ export class Tab1Page {
     }
 
     async editar(contacto: ContactoI) {
-      console.log('edit -> ', contacto);
-      // Enviar el contacto completo al modal
+     
       const modal = await this.modalController.create({
         component: EditContactoModalComponent,
         componentProps: {
-          contacto: contacto // Asegurándote de enviar el contacto con el ID
+          contacto: contacto
         }
       });
-      // Mostrar el modal
       await modal.present();
     }
    

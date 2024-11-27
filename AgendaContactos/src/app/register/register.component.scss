@@ -1,7 +1,7 @@
 .contenedor-inicio {
-    display: flex;/* Alinea verticalmente la imagen y el card */
-    gap: -10px; /* Espacio entre la imagen y el card */
-    flex-wrap: wrap; /* Permite que se acomode en dispositivos pequeños */
+    display: flex;
+    gap: -10px;
+    flex-wrap: wrap;
     
   }
   .card {
@@ -11,23 +11,23 @@
   }
   
   .inicioContenedor {
-    flex: 1; /* La imagen ocupa espacio proporcional */
+    flex: 1;
     display: flex;
-    justify-content: center; /* Centra la imagen en su columna */
+    justify-content: center;
   }
   
   .fotoRegistro {
-    width: 600px; /* Tamaño ajustado de la imagen */
+    width: 600px;
     height: 650px;
     margin-left: 1px;
     margin-right: -10px;
-    border-radius: 15px; /* Hace la imagen redonda */
+    border-radius: 15px;
     object-fit: cover;
   }
   
   ion-card {
-    flex: 1; /* El ion-card ocupa más espacio proporcional */
-    margin: 20px; /* Separación del card con los bordes */
+    flex: 1;
+    margin: 20px;
   }
   
   .botonIniciar {
@@ -48,11 +48,11 @@
     }
 
     .inputCorreo {
-        --color: #000; /* Color del texto */
-        --placeholder-color: #aaa; /* Color del placeholder */
-        --padding-start: 10px; /* Espaciado interno a la izquierda */
-        font-size: 16px; /* Tamaño del texto */
-        border-radius: 5px; /* Bordes redondeados */
+        --color: #000;
+        --placeholder-color: #aaa;
+        --padding-start: 10px;
+        font-size: 16px;
+        border-radius: 5px;
     }
 
     ion-toolbar {

@@ -29,6 +29,6 @@ export class AuthService {
   }
 
   cerrarSesion(): Promise<void> {
-    return signOut(this.auth);  // Llama a Firebase signOut que devuelve una promesa
+    return signOut(this.auth);
   }
 }
